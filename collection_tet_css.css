@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --purple:#3545ce
+
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    font-size: 1vw;  
+    scroll-snap-stop: always;
+}
+
+
+nav{ 
+    display: flex;
+    text-align: center;
+    background-color: black;
+    height:2vw;
+    list-style-type: none;
+    margin: 0;
+    padding-top:0.5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    }
+
+a{ 
+    color:white;
+    text-decoration: none;
+}
+
+#chariblelogowhite {
+    max-width:100%;
+    max-height:100%;
+    padding-bottom: 0.5vw;
+    padding-right:28vw;
+    padding-left: 0.5vw;
+}
+
+#paddingleft {
+    padding-right:5vw;
+}
+
+li 
+    {display:inline;}
+
+.imgfill{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover img {
+    width:100%;
+    height:auto;
+
+
+}
+
+.imgfill{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.centerdiv {
+    width:100%;
+    display: flex;
+    justify-content: center;}
+
+.about h1{
+
+    background-color: orange;
+    color:white;
+    border-radius: 1vw;
+    text-align:center;
+    margin-right:25vw;
+    margin-left:25vw;
+    margin-top:5vw;
+    margin-bottom: 3vw;
+}
+
+
+
+.about p{
+    margin-left:20vw;
+    margin-right:20vw;
+    text-align: justify;
+    font-size: 1.3vw;
+    font-weight: 500;
+    line-height: 1.7vw;
+}
+
+.about {
+    margin-bottom:7vw;
+}
+
+.gallery{
+    margin-bottom:10vw;
+}
+
+.gallery h1{
+    background-color: orange;
+    color:white;
+    border-radius: 1vw;
+    text-align:center;
+    margin-right:35vw;
+    margin-left:35vw;
+ 
+
+
+}
+
+
+.galleryinner {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top:2vw;
+
+}
+
+.item{
+    display:grid;
+    grid-template-rows: 17vw 3vw 1.5vw 2vw;
+    width:17vw;
+    background-color: whitesmoke;
+    box-shadow: 0.5vw 0.5vw 2vw #B0B0B0;
+    border-radius: 1.5vw;
+    padding-bottom: 1vw;
+    margin-top:3vw;
+
+}
+
+.item .name{
+    font-size:1.3vw;
+    font-weight: 500;
+    padding-left: 1vw;
+    padding-top:0.5vw;
+}
+
+#NFTicon{
+    border-top-right-radius: 1.5vw;
+    border-top-left-radius: 1.5vw;
+    display:inline-block;
+    overflow: hidden;
+}
+
+#NFTicon img {
+
+    grid-row:1/2;
+}
+
+#NFTicon :hover{
+    display:block;
+    transition: transform .4s;
+    transform:scale(1.05);
+    transform-origin: 50% 50%;
+    
+}
+
+
+.item .pricetitle{
+    padding-left: 1vw;
+}
+
+.item .price{
+    padding-left: 1vw;
+    display:grid;
+    grid-template-columns: 1vw 5vw;
+    grid-column-gap: 0.2vw;
+    height:0.3vw;
+    
+}
+
+.item .price .eth{
+    grid-column:1/2;
+    
+}
+
+.item .price p{
+    padding-top:0.1vw;
+    font-weight: 500;
+    font-size:1.2vw;    
+}
+
+.footer{
+    height: 20vw;
+    background-color: white;
+    border-top-left-radius: 5vw;
+    border-top-right-radius:5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    box-shadow: 0vw 0vw 3vw darkgray;
+}
+
+.footerinner{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5vw;
+
+}
+
+.col1{
+    display:grid;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
+    height:20vw;
+}
+
+.col1 h1{
+    font-size:2.8vw;
+    color:var(--purple);
+    text-align: left;
+    padding-left: 1vw;
+    padding-top:3vw;
+}
+
+.col1 .contact{
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+    margin-top:1vw;
+}
+
+.col1 .contact img{
+    width: 1.5vw;
+    height:auto;
+    padding-top: 0.2vw;
+    padding-left: 1.4vw;
+
+}
+
+.col1 .contact p{
+    font-size:1.2vw;
+
+}
+
+#call{
+    width:1.3vw;
+}
+
+.iconlist{
+    display:grid;
+    grid-template-columns: repeat(3,4vw);
+    margin-left:1.5vw;
+    margin-top:2vw;
+    margin-bottom: 2vw;
+    grid-column-gap:1vw;
+
+
+}
+
+
+.iconcontainer img{
+    width:2vw;
+    padding:0.5vw;
+    border: 0.5vw solid var(--purple);
+    border-radius:1vw;
+}
+
+
+.col2 {
+    margin-top:7.5vw;
+}
+
+.col2 p{
+    margin-bottom:1vw;
+    font-size: 1.2vw;
+    display:list-item;
+
+}
